@@ -34,6 +34,11 @@ footer {
   min-height: 100vh;
 }
 
-.content-wrap {
+.title-wrap {
   padding-bottom: 3rem;
+}
+.content-wrap {
+  background-color: aquamarine;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
 }
