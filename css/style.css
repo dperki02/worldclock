@@ -3,21 +3,52 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
   color: rgb(140, 191, 191);
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-footer {
-  background-color: azure;
-  position: absolute;
-  text-align: center;
-  bottom: 2px;
+h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+
+select {
+  display: block;
   width: 100%;
-  font-weight: bolder;
-  opacity: 0.6;
-  height: 3rem;
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.date {
+  opacity: 0.7;
+}
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 30px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+}
+
+.city:last-child {
+  border: none;
+}
+
+.time {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 24px;
+  vertical-align: middle;
+  line-height: 48px;
 }
 
 .logo {
@@ -32,6 +63,8 @@ footer {
 .container {
   position: relative;
   min-height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .title-wrap {
@@ -39,6 +72,22 @@ footer {
 }
 .content-wrap {
   background-color: aquamarine;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+  opacity: 0.8;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 3rem;
   padding-top: 2rem;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: azure;
+  position: absolute;
+  text-align: center;
+  bottom: 2px;
+  width: 100%;
+  opacity: 0.4;
+  height: 3rem;
+  font-size: 18px;
 }
