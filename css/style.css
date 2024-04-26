@@ -63,7 +63,7 @@ select {
 .container {
   position: relative;
   min-height: 100vh;
-  max-width: 600px;
+
   margin: 0 auto;
 }
 
@@ -79,6 +79,8 @@ select {
   padding-bottom: 3rem;
   padding-top: 2rem;
   border-radius: 10px;
+  max-width: 600px;
+  margin: 60px auto;
 }
 
 footer {
