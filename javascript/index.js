@@ -23,6 +23,18 @@ function updateTime() {
       "h:mm:ss SSS [<small>]A[</small>]"
     );
   }
+
+  //Jerusalem
+  let asiaElement = document.querySelector("#asia");
+  if (asiaElement) {
+    let asiaDateElement = asiaElement.querySelector(".date");
+    let asiaTimeElement = asiaElement.querySelector(".time");
+    let asiaTime = moment().tz("Asia/Jerusalem");
+    asiaDateElement.innerHTML = asiaTime.format("MMM Do YYYY");
+    asiaTimeElement.innerHTML = asiaTime.format(
+      "h:mm:ss SSS [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
@@ -45,12 +57,12 @@ function updateCity(event) {
       <div class="time">${cityTime.format(
         "h:mm:ss SSS "
       )} <small>${cityTime.format("A")}</small></div>
-    </div>`;
+    </div>
+    <a href="/">Back to Home Page</a>`;
 }
 
 updateTime();
 setInterval(updateTime, 1);
 
 let citySelectElement = document.querySelector("#city");
-
 citySelectElement.addEventListener("change", updateCity);
